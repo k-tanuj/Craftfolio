@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume - Architectural Earth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Work+Sans:wght@300;400;500;600;700&amp;family=Press+Start+2P&amp;family=VT323&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#534437",
+                    "background": "#121412",
+                    "inverse-primary": "#456644",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "primary-fixed-dim": "#abd0a7",
+                    "surface-bright": "#383a37",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "outline": "#8d9289",
+                    "secondary-container": "#564639",
+                    "on-secondary": "#3c2e22",
+                    "inverse-surface": "#e2e3df",
+                    "tertiary-fixed": "#e4e2e2",
+                    "on-surface-variant": "#c3c8bd",
+                    "secondary": "#d9c2b2",
+                    "surface-container": "#1e201e",
+                    "on-secondary-fixed": "#25190f",
+                    "surface-container-low": "#1a1c1a",
+                    "outline-variant": "#434840",
+                    "on-primary-container": "#97bc93",
+                    "on-primary-fixed": "#012107",
+                    "on-error-container": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "on-tertiary-container": "#b3b2b2",
+                    "on-tertiary": "#303030",
+                    "primary": "#abd0a7",
+                    "surface-container-highest": "#333533",
+                    "on-secondary-container": "#cab4a4",
+                    "primary-container": "#2c4c2c",
+                    "on-primary": "#17371a",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "surface-tint": "#abd0a7",
+                    "on-surface": "#e2e3df",
+                    "tertiary": "#c7c6c6",
+                    "inverse-on-surface": "#2f312f",
+                    "secondary-fixed": "#f6decd",
+                    "surface-container-high": "#282a28",
+                    "on-background": "#e2e3df",
+                    "surface-container-lowest": "#0d0f0d",
+                    "surface-dim": "#121412",
+                    "on-error": "#690005",
+                    "surface-variant": "#333533",
+                    "tertiary-container": "#454545",
+                    "error-container": "#93000a",
+                    "primary-fixed": "#c6edc1",
+                    "on-primary-fixed-variant": "#2e4e2e",
+                    "surface": "#121412",
+                    "secondary-fixed-dim": "#d9c2b2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Work Sans"],
+                    "label": ["Space Grotesk"],
+                    "mono": ["VT323"],
+                    "brand": ["Press Start 2P"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #121412;
+            color: #e2e3df;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-[#121412] dark:bg-[#121412] w-full top-0 z-50 sticky">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#abd0a7]" data-icon="architecture">architecture</span>
+<span class="font-['Press_Start_2P'] text-sm text-[#abd0a7] uppercase">ARCHITECTURAL EARTH</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#c7c6c6] font-['Space_Grotesk'] tracking-tight hover:bg-[#383a37] transition-colors duration-200 px-3 py-1" href="#">Projects</a>
+<a class="text-[#c7c6c6] font-['Space_Grotesk'] tracking-tight hover:bg-[#383a37] transition-colors duration-200 px-3 py-1" href="#">Experience</a>
+<a class="text-[#abd0a7] font-bold font-['Space_Grotesk'] tracking-tight" href="#">About</a>
+<a class="text-[#c7c6c6] font-['Space_Grotesk'] tracking-tight hover:bg-[#383a37] transition-colors duration-200 px-3 py-1" href="#">Contact</a>
+</nav>
+<button class="md:hidden text-[#abd0a7]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row gap-12 lg:gap-20">
+<!-- Sidebar / Identity Block -->
+<aside class="md:w-1/3 flex flex-col gap-8">
+<div class="bg-surface-container p-1 shadow-2xl">
+<img alt="Professional Headshot" class="w-full aspect-[4/5] object-cover grayscale contrast-125 brightness-90" data-alt="Close-up professional portrait of a man with spectacles in a modern architectural studio, dramatic soft lighting, earthy color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZKL78fUh8SeVla8kPbJO4vbYsWVw3MAxZ-27SnPdhwdg9Z7umt5aLnvc9x7PKUAEPaCwnNk9Nl674-vatXaN1VGsFDe60-ZiSVRrn7ElCncd_braK0xqRT-k2Ci90_P9H2naYnvzsa-r-G6hiKrAsvo83p676YzzroBdCJFuHIZ-t5dvSGdyzjry_0LOIBr1fvCtyMU5tpLD2qzyXqMvlNa4odfSPd82hjALlCIbLNNo9-O1rdQzZXHw7cJkwU7IsF1BA1CLSll1g"/>
+</div>
+<div class="space-y-6">
+<div>
+<h1 class="text-primary font-headline text-5xl font-bold tracking-tighter leading-none mb-2">Resume</h1>
+<p class="text-secondary font-mono text-xl tracking-widest">ARCHITECT // SYSTEM DESIGNER</p>
+</div>
+<div class="flex flex-col gap-3">
+<button class="bg-primary text-on-primary font-headline font-bold py-4 px-6 flex items-center justify-between hover:bg-primary-fixed transition-all active:scale-95 group">
+                        DOWNLOAD RESUME (PDF)
+                        <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">download</span>
+</button>
+<button class="border-2 border-outline-variant text-on-surface font-headline font-bold py-4 px-6 flex items-center justify-between hover:bg-surface-bright transition-all active:scale-95">
+                        CONTACT ME
+                        <span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-6 space-y-4">
+<h3 class="text-tertiary font-brand text-[10px] uppercase tracking-[0.2em]">Contact Information</h3>
+<div class="space-y-2 font-mono text-sm">
+<p class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-xs">location_on</span> SEATTLE, WA</p>
+<p class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-xs">link</span> ARCH-EARTH.DIGITAL</p>
+<p class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-xs">call</span> +1 [206] 555-0192</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<section class="md:w-2/3 space-y-16">
+<!-- Summary Block -->
+<div class="relative">
+<span class="absolute -top-6 -left-2 text-primary/10 font-brand text-6xl select-none">01</span>
+<div class="space-y-6">
+<h2 class="text-tertiary font-brand text-xs uppercase tracking-widest flex items-center gap-4">
+<span class="w-12 h-[2px] bg-primary"></span> Summary
+                    </h2>
+<p class="text-display-sm font-headline text-2xl md:text-3xl font-light leading-relaxed text-on-surface">
+                        Designing modular structural systems that synthesize <span class="text-primary italic">Brutalist integrity</span> with sustainable ecological integration. Focused on the intersection of digital construction environments and physical permanence.
+                    </p>
+</div>
+</div>
+<!-- Experience Bento Grid -->
+<div class="relative">
+<span class="absolute -top-6 -left-2 text-primary/10 font-brand text-6xl select-none">02</span>
+<div class="space-y-8">
+<h2 class="text-tertiary font-brand text-xs uppercase tracking-widest flex items-center gap-4">
+<span class="w-12 h-[2px] bg-primary"></span> Experience
+                    </h2>
+<div class="grid grid-cols-1 gap-4">
+<!-- Exp Item 1 -->
+<div class="bg-surface-container p-8 flex flex-col md:flex-row justify-between gap-6 hover:bg-surface-container-high transition-colors">
+<div class="space-y-2">
+<span class="font-mono text-secondary text-sm">2021 — PRESENT</span>
+<h4 class="text-xl font-headline font-bold text-on-surface">Lead System Architect</h4>
+<p class="text-primary font-mono uppercase text-sm">Monolith Design Group</p>
+</div>
+<div class="md:w-1/2">
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    Pioneering the "Earth-First" structural framework for high-density modular housing. Managed a cross-functional team of 15 designers and engineers.
+                                </p>
+</div>
+</div>
+<!-- Exp Item 2 -->
+<div class="bg-surface-container-low p-8 flex flex-col md:flex-row justify-between gap-6 hover:bg-surface-container transition-colors">
+<div class="space-y-2">
+<span class="font-mono text-secondary text-sm">2018 — 2021</span>
+<h4 class="text-xl font-headline font-bold text-on-surface">Junior Urban Designer</h4>
+<p class="text-primary font-mono uppercase text-sm">Terracotta Studios</p>
+</div>
+<div class="md:w-1/2">
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    Developed algorithmic layouts for sustainable urban parks in arid climates. Reduced material waste by 22% through digital optimization.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Skills & Education Asymmetric Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Education -->
+<div class="space-y-8">
+<h2 class="text-tertiary font-brand text-xs uppercase tracking-widest flex items-center gap-4">
+<span class="w-8 h-[2px] bg-secondary"></span> Education
+                    </h2>
+<div class="space-y-8 border-l-2 border-surface-container-highest pl-6">
+<div class="space-y-1">
+<span class="font-mono text-secondary text-xs">2014 — 2018</span>
+<h4 class="text-lg font-headline font-bold">M.Arch in Sustainable Systems</h4>
+<p class="text-on-surface-variant text-sm italic">University of British Columbia</p>
+</div>
+<div class="space-y-1">
+<span class="font-mono text-secondary text-xs">2010 — 2014</span>
+<h4 class="text-lg font-headline font-bold">B.A. in Environmental Design</h4>
+<p class="text-on-surface-variant text-sm italic">Rhode Island School of Design</p>
+</div>
+</div>
+</div>
+<!-- Skills -->
+<div class="space-y-8">
+<h2 class="text-tertiary font-brand text-xs uppercase tracking-widest flex items-center gap-4">
+<span class="w-8 h-[2px] bg-secondary"></span> Technical Skills
+                    </h2>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-primary">RHINO 3D</span>
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-primary">GRASSHOPPER</span>
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-primary">REVIT B.I.M.</span>
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-on-surface">PARAMETRIC DESIGN</span>
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-on-surface">UNREAL ENGINE 5</span>
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-on-surface">DIGITAL FABRICATION</span>
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-secondary">STRUCTURAL ANALYSIS</span>
+<span class="bg-surface-container-highest px-4 py-2 text-sm font-mono text-secondary">PROJECT MGMT</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0d0f0d] dark:bg-[#0d0f0d] w-full py-12 px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 w-full">
+<div class="flex flex-col gap-1 items-center md:items-start">
+<span class="font-['Press_Start_2P'] text-[10px] text-[#abd0a7]">ARCH-EARTH</span>
+<p class="font-['Work_Sans'] text-xs text-[#c7c6c6]">© 2024 Architectural Earth Portfolio. All rights reserved.</p>
+</div>
+<div class="flex items-center gap-6">
+<a class="font-['Work_Sans'] text-xs text-[#c7c6c6] hover:text-[#d9c2b2] transition-colors" href="#">LinkedIn</a>
+<a class="font-['Work_Sans'] text-xs text-[#c7c6c6] hover:text-[#d9c2b2] transition-colors" href="#">GitHub</a>
+<a class="font-['Work_Sans'] text-xs text-[#c7c6c6] hover:text-[#d9c2b2] transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-16 bg-[#121412] z-50">
+<button class="flex flex-col items-center justify-center text-[#c7c6c6] py-2 hover:bg-[#383a37] active:scale-95 transition-transform w-full">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">Projects</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#c7c6c6] py-2 hover:bg-[#383a37] active:scale-95 transition-transform w-full">
+<span class="material-symbols-outlined">layers</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">Experience</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-[#1e201e] text-[#abd0a7] py-2 active:scale-95 transition-transform w-full">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">About</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#c7c6c6] py-2 hover:bg-[#383a37] active:scale-95 transition-transform w-full">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">Contact</span>
+</button>
+</nav>
+</body></html>

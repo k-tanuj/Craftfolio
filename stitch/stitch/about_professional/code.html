@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Work+Sans:wght@300;400;500;600;700&amp;family=Press+Start+2P&amp;family=VT323&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#534437",
+                        "background": "#121412",
+                        "inverse-primary": "#456644",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "primary-fixed-dim": "#abd0a7",
+                        "surface-bright": "#383a37",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline": "#8d9289",
+                        "secondary-container": "#564639",
+                        "on-secondary": "#3c2e22",
+                        "inverse-surface": "#e2e3df",
+                        "tertiary-fixed": "#e4e2e2",
+                        "on-surface-variant": "#c3c8bd",
+                        "secondary": "#d9c2b2",
+                        "surface-container": "#1e201e",
+                        "on-secondary-fixed": "#25190f",
+                        "surface-container-low": "#1a1c1a",
+                        "outline-variant": "#434840",
+                        "on-primary-container": "#97bc93",
+                        "on-primary-fixed": "#012107",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "on-tertiary-container": "#b3b2b2",
+                        "on-tertiary": "#303030",
+                        "primary": "#abd0a7",
+                        "surface-container-highest": "#333533",
+                        "on-secondary-container": "#cab4a4",
+                        "primary-container": "#2c4c2c",
+                        "on-primary": "#17371a",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "surface-tint": "#abd0a7",
+                        "on-surface": "#e2e3df",
+                        "tertiary": "#c7c6c6",
+                        "inverse-on-surface": "#2f312f",
+                        "secondary-fixed": "#f6decd",
+                        "surface-container-high": "#282a28",
+                        "on-background": "#e2e3df",
+                        "surface-container-lowest": "#0d0f0d",
+                        "surface-dim": "#121412",
+                        "on-error": "#690005",
+                        "surface-variant": "#333533",
+                        "tertiary-container": "#454545",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#c6edc1",
+                        "on-primary-fixed-variant": "#2e4e2e",
+                        "surface": "#121412",
+                        "secondary-fixed-dim": "#d9c2b2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Work Sans"],
+                        "label": ["Space Grotesk"],
+                        "mono": ["VT323"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0d0f0d;
+            color: #e2e3df;
+            font-family: 'Work Sans', sans-serif;
+        }
+        /* Custom scrollbar for brutalist look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #121412; }
+        ::-webkit-scrollbar-thumb { background: #383a37; }
+        ::-webkit-scrollbar-thumb:hover { background: #abd0a7; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest">
+<!-- TopAppBar -->
+<header class="bg-[#121412] dark:bg-[#121412] w-full top-0 z-50 sticky">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#abd0a7] dark:text-[#abd0a7]" data-icon="architecture">architecture</span>
+<span class="font-['Press_Start_2P'] text-sm text-[#abd0a7] uppercase">ARCHITECTURAL EARTH</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-['Work_Sans'] text-sm uppercase font-semibold text-[#c7c6c6] hover:bg-[#1e201e] transition-colors duration-200 px-2 py-1" href="#">Projects</a>
+<a class="font-['Work_Sans'] text-sm uppercase font-semibold text-[#c7c6c6] hover:bg-[#1e201e] transition-colors duration-200 px-2 py-1" href="#">Experience</a>
+<a class="font-['Work_Sans'] text-sm uppercase font-semibold text-[#abd0a7] font-bold px-2 py-1" href="#">About</a>
+<a class="font-['Work_Sans'] text-sm uppercase font-semibold text-[#c7c6c6] hover:bg-[#1e201e] transition-colors duration-200 px-2 py-1" href="#">Contact</a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-[#abd0a7]" data-icon="menu">menu</span>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 md:py-24">
+<!-- Hero Section Asymmetry -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: Headshot & Bio Anchor -->
+<div class="lg:col-span-5 space-y-8">
+<div class="relative group">
+<div class="absolute -inset-2 bg-primary-container opacity-20 group-hover:opacity-30 transition-opacity"></div>
+<img alt="Professional Architect Headshot" class="w-full aspect-square object-cover grayscale contrast-125 relative z-10" data-alt="Modern professional portrait of a male architect in a charcoal turtleneck, standing against a minimalist concrete wall with soft directional side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlZghYo1EGPzD8aoM3h0dVCAlvwmWgFXcLyK0YH1XAE7bHqEr48PYV5Q1jG0XFPNW-54yn-zFUOjchmlh_CqXCyeBkPf3ce24AEdsbXLf8UTuRnJ2H314bqa-_d6-9OnupWSkHo4-IqnIeZNm0Mtb-CXkVwojvWMDxyh-H4P94IbajA3ULycm9TPmWjV_EVhpKVv3zFjueIX8JI7WBuEurvD4fohTKhke3sLScAaX2WltVSxtEUyYBwvgSa1ZEouDHLnEat7_1B-F2"/>
+<div class="absolute bottom-0 right-0 bg-primary px-4 py-2 z-20">
+<p class="font-mono text-on-primary text-sm tracking-widest">EST. 2014</p>
+</div>
+</div>
+<div class="bg-surface-container p-8">
+<h1 class="font-headline text-5xl font-bold tracking-tight text-primary mb-6">About</h1>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+                        Pioneering the intersection of sustainable materials and digital precision. My practice focuses on the tectonic honesty of Brutalism balanced with the regenerative potential of organic systems.
+                    </p>
+<div class="mt-8 flex gap-4">
+<button class="bg-primary text-on-primary px-6 py-3 font-label font-bold uppercase hover:bg-primary-fixed transition-colors flex items-center gap-2">
+                            Download CV <span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right: Professional Profile & Expertise -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Professional Profile Block -->
+<section>
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-secondary">Professional Profile</h2>
+<div class="h-[2px] flex-grow bg-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-low p-6 border-l-4 border-primary">
+<p class="font-mono text-xs text-primary mb-2">/ MISSION</p>
+<p class="text-on-surface text-sm leading-relaxed">To construct resilient spaces that serve both human interaction and environmental restoration through rigorous geometric logic.</p>
+</div>
+<div class="bg-surface-container-low p-6 border-l-4 border-secondary">
+<p class="font-mono text-xs text-secondary mb-2">/ PHILOSOPHY</p>
+<p class="text-on-surface text-sm leading-relaxed">Architecture is not a sculpture; it is a living substrate that should age with grace and structural transparency.</p>
+</div>
+</div>
+</section>
+<!-- Core Expertise Block -->
+<section>
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-secondary">Core Expertise</h2>
+<div class="h-[2px] flex-grow bg-surface-container-highest"></div>
+</div>
+<div class="space-y-8">
+<!-- Skill 1 -->
+<div>
+<div class="flex justify-between items-end mb-2">
+<span class="font-label text-sm uppercase font-semibold text-on-surface">Structural Engineering</span>
+<span class="font-mono text-sm text-primary">94%</span>
+</div>
+<div class="w-full h-3 bg-surface-container-highest">
+<div class="bg-primary h-full" style="width: 94%;"></div>
+</div>
+</div>
+<!-- Skill 2 -->
+<div>
+<div class="flex justify-between items-end mb-2">
+<span class="font-label text-sm uppercase font-semibold text-on-surface">Sustainable Site Systems</span>
+<span class="font-mono text-sm text-primary">88%</span>
+</div>
+<div class="w-full h-3 bg-surface-container-highest">
+<div class="bg-primary h-full" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Skill 3 -->
+<div>
+<div class="flex justify-between items-end mb-2">
+<span class="font-label text-sm uppercase font-semibold text-on-surface">Algorithmic Design</span>
+<span class="font-mono text-sm text-primary">82%</span>
+</div>
+<div class="w-full h-3 bg-surface-container-highest">
+<div class="bg-primary h-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Skill 4 -->
+<div>
+<div class="flex justify-between items-end mb-2">
+<span class="font-label text-sm uppercase font-semibold text-on-surface">Material Research</span>
+<span class="font-mono text-sm text-primary">90%</span>
+</div>
+<div class="w-full h-3 bg-surface-container-highest">
+<div class="bg-primary h-full" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline Asymmetric Grid -->
+<section>
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-secondary">Experience</h2>
+<div class="h-[2px] flex-grow bg-surface-container-highest"></div>
+</div>
+<div class="space-y-0 relative before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-surface-container-highest ml-1 pl-8">
+<div class="relative pb-10">
+<div class="absolute -left-[41px] top-0 w-4 h-4 bg-primary"></div>
+<span class="font-mono text-xs text-primary block mb-1">2020 — PRESENT</span>
+<h3 class="font-headline text-xl font-bold text-on-surface uppercase">Senior Lead Architect</h3>
+<p class="text-secondary text-sm mb-3">Tectonic Labs, Oslo</p>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-xl">Overseeing the development of high-density sustainable housing projects using low-carbon basalt-reinforced concrete.</p>
+</div>
+<div class="relative pb-10">
+<div class="absolute -left-[41px] top-0 w-4 h-4 bg-surface-container-highest hover:bg-secondary transition-colors"></div>
+<span class="font-mono text-xs text-on-surface-variant block mb-1">2016 — 2020</span>
+<h3 class="font-headline text-xl font-bold text-on-surface uppercase">Computational Designer</h3>
+<p class="text-secondary text-sm mb-3">Void-Solid Collective, Berlin</p>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-xl">Implemented parametric workflows for large-scale facade optimization, reducing solar heat gain by 40%.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0d0f0d] dark:bg-[#0d0f0d] w-full py-12 px-6 mt-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-['Press_Start_2P'] text-[10px] text-[#abd0a7]">ARCHITECTURAL EARTH</span>
+<p class="font-['Work_Sans'] text-xs text-[#c7c6c6] text-center md:text-left">© 2024 Architectural Earth Portfolio. All rights reserved.</p>
+</div>
+<div class="flex gap-6">
+<a class="font-['Work_Sans'] text-xs text-[#c7c6c6] hover:text-[#d9c2b2] transition-colors" href="#">LinkedIn</a>
+<a class="font-['Work_Sans'] text-xs text-[#c7c6c6] hover:text-[#d9c2b2] transition-colors" href="#">GitHub</a>
+<a class="font-['Work_Sans'] text-xs text-[#c7c6c6] hover:text-[#d9c2b2] transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-16 bg-[#121412] z-50">
+<a class="flex flex-col items-center justify-center text-[#c7c6c6] py-2 hover:bg-[#383a37] w-full transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c7c6c6] py-2 hover:bg-[#383a37] w-full transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">Experience</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#1e201e] text-[#abd0a7] py-2 w-full transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c7c6c6] py-2 hover:bg-[#383a37] w-full transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase">Contact</span>
+</a>
+</nav>
+</body></html>
